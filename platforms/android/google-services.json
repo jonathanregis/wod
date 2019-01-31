@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "916844322485",
+    "firebase_url": "https://word-1fcd2.firebaseio.com",
+    "project_id": "word-1fcd2",
+    "storage_bucket": "word-1fcd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916844322485:android:0af9fb0d5b0731b2",
+        "android_client_info": {
+          "package_name": "com.cdjgroup.word"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916844322485-u9gvn3va78s8m6cruf33sqhd5ustmafv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgRo63rEi2mhfYdlS11O2Dc2AdWKScWZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

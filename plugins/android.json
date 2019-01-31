@@ -1,0 +1,29 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.jonathanregis.perezfrench"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.jonathanregis.perezfrench"
+    },
+    "cordova-plugin-firebase-authentication": {
+      "FIREBASE_AUTH_VERSION": "16.0.+",
+      "PACKAGE_NAME": "com.cdjgroup.word"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.cdjgroup.word"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.cdjgroup.word"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\jonathan\\Documents\\perezfrench\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jonathan\\.gradle\\caches\\transforms-1\\files-1.1\\mobicomkitui-5.8.4.aar\\e52bb81194e6181d6fae6f0cac63fcc5\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,3,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,143,288",
+                        "endLines": "2,5,6",
+                        "endColumns": "87,12,42",
+                        "endOffsets": "138,283,326"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,295 @@
+<template>
+  <div class="page" data-name="preachings">
+    <div class="navbar no-hairline no-shadow">
+      <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link icon-only panel-open" data-panel="left">
+              <i class="icon f7-icons ios-only">menu</i>
+              <i class="icon material-icons md-only">menu</i>
+            </a>
+        </div>
+        <div class="title">{{t('preachings','ucw')}}</div>
+        <div class="right">
+            <a class="link icon-only searchbar-enable" data-searchbar=".searchbar">
+                <i class="icon f7-icons ios-only color-blue">search_strong</i>
+                <i class="icon material-icons md-only color-white">search</i>
+            </a>
+            <a class="link popover-open" href="#" data-popover=".popover-more">
+                <i class="icon f7-icons color-blue ios-only">more_vertical</i>
+                <i class="icon material-icons color-white md-only">more_vert</i>
+            </a>
+        </div>
+        <form class="searchbar searchbar-expandable searchbar-backdrop-in">
+        <div class="searchbar-inner sliding">
+          <div class="searchbar-input-wrap">
+            <input type="search" class="sinput" placeholder="{{t('Search','ucw')}}"/>
+            <i class="searchbar-icon"></i>
+            <span class="input-clear-button"></span>
+          </div>
+          <span class="searchbar-disable-button">{{t("cancel",'ucw')}}</span>
+        </div>
+      </form>
+      </div>
+    </div>
+    <div class="toolbar tabbar no-hairline no-shadow tabbar-labels">
+        
+        <div class="toolbar-inner">
+            <a href="#tab-1" class="tab-link">
+                <i class="f7-icons icon ios-only">time</i>
+                <i class="f7-icons icon ios-only icon-ios-fill">time_fill</i>
+                <i class="material-icons icon md-only">timer</i>
+                {{t("Recent","ucw")}}
+            </a>
+            <a href="#tab-2" class="tab-link tab-link-active">
+                <i class="f7-icons icon ios-only">fire</i>
+                <i class="f7-icons icon ios-only icon-ios-fill">fire_fill</i>
+                <i class="material-icons icon md-only">trending_up</i>                
+                {{t("Popular","ucw")}}
+            </a>
+            <a href="#tab-3" class="tab-link">
+                <i class="f7-icons icon ios-only">heart</i>
+                <i class="f7-icons icon ios-only icon-ios-fill">heart_fill</i>
+                <i class="material-icons icon md-only">favorite</i>                 
+                {{t("favorites","ucw")}}
+            </a>
+        </div>
+    </div>
+        <div class="tabs-swipeable-wrap ">
+            <div class="tabs ">
+                <!-- recent tab -->
+              <div id="tab-1" class="oa tab color-continue">
+                    <!--<div class="block-title uppercase" style="color:white">
+                        {{t("most&nbsp;recent")}}
+                    </div>-->
+                  <!-- list of preachings by type -->
+                    <div class="list">
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/list-media.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>The heartbeat of God</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+              </div>
+                <!-- popular tab -->
+              <div id="tab-2" class="oa tab tab-active color-continue">
+                    <!--<div class="block-title uppercase">
+                        {{t("most&nbsp;popular")}}
+                    </div>-->
+                  <!-- list of preachings by type -->
+                    <div class="list">
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/list-media.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>The heartbeat of God</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+              </div>
+                <!-- preachers tab -->
+              <div id="tab-3" class="oa tab color-continue">
+                    <!--<div class="block-title uppercase">
+                        {{t("gallery")}}
+                    </div>-->
+                  <!-- list of preachings by type -->
+                    <div class="list">
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/list-media.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>The heartbeat of God</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="card preaching-card-header-pic">
+                            <div class="card-content-image">
+                                <img src="img/p.jpg"/>
+                            </div>
+                            <div class="card-content-wrapper">
+                                <div class="card-content card-content-padding">
+                                    <h3>Journey To Mountains</h3>
+                                  <p class="title">Rev. Francis Agyinasare</p>
+                                  <p class="date">{{t("posted")}} {{t("5h&nbsp;ago")}}</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+  </div>
+    
+</template>
+<script>
+  return {
+    data: function () {
+      return {
+        typeId: this.$route.params.typeId,
+        t: this.$root.translate,
+      };
+    }
+  };
+</script>

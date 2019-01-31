@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\jonathan\\Documents\\perezfrench\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jonathan\\.gradle\\caches\\transforms-1\\files-1.1\\mobicomkitui-5.8.4.aar\\e52bb81194e6181d6fae6f0cac63fcc5\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,111,164,213",
+                        "endColumns": "55,52,48,38",
+                        "endOffsets": "106,159,208,247"
+                    }
+                }
+            ]
+        }
+    ]
+}
